@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Donate Life</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index" />
+    <meta name="Description" content="Tasio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="aland Mariwan" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Aland" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="author" content="Aland Mariwan" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--=============== favicons ===============-->
+    <link rel="icon" href="../img/logo_red.jpg">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../img/logo_red.jpg">
+    <link rel="apple-touch-startup-image" sizes="180x180" href="../img/logo_red.jpg">
+    <!--=============== css  ===============-->
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  <!--=============== JS  ===============-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('eirdf7hth7ib');
+    </script>
+    <!-- End of Async Drift Code -->
+  </head>
+  <body>
+    <section class="section-home">
+      <div class="container-illustration">
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_lsfhjhqp.json"
+          class="lottie-file"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="container-data-illustration">
+          <h5>Donate blood save lives !</h5>
+          <span>Aland Mariwan - 2021</span>
+        </div>
+      </div>
+      <div class="container-form">
+        <div class="container-data">
+          <span class="material-icons icon">label_important</span>
+          <h3>your donation matters</h3>
+          <p>
+More than 38,000 donations are needed every day. Only 1.9% of the
+             Kurdistan population donates blood
+          </p>
+        </div>
+        <div class="container-topic">
+          <span class="material-icons icon"> add_circle_outline</span>
+          <p>Enter donor list</p>
+        </div>
+        <form>
+          <input type="text" placeholder="Name" id="name" />
+          <input type="text" placeholder="Email" id="email" />
+          <input type="text" placeholder="Type" id="type" />
+          <p id="input_text" class="input_text"></p>
+          <button onclick="Confirm()">I want to help</button>
+        </form>
+        <div>
+          <div class="container-topic">
+            <span class="material-icons icon">water_drop</span>
+            <span>last dictators: </span>
+          </div>
+          <ul id="list"></ul>
+        </div>
+      </div>
+    </section>
+    <script src="../script/home.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
